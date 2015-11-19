@@ -13,10 +13,11 @@ body {
 
   .header {
   position: fixed;
+  height:40px;
   top: 0px;
-  width: 1020px;
+  width: 922px;
+  background-color: #66ffcc;
   z-index: 100;
-  background-color: #66ffcc;;
 }
 
 
@@ -24,7 +25,7 @@ body {
       position: relative;
       top: 38px;
       left: 0px;
-      width: 1020px;
+      width: 922px;
       background-color: #66ffcc;
       max-height: 40px;
     }
@@ -34,7 +35,6 @@ body {
       top: 54px;
       left: 0px;
       width: 500px;
-      max-height: 20px;
     }
 
 
@@ -44,50 +44,53 @@ body {
     top: 70px;
     overflow: hidden;
     background-color: #ffffff;
+    z-index: 1;
    }
 
 
   .left-column{
-
+    z-index: 1;
   }
 
 
   .right-column{
       position: absolute;
-      top: 28px;
-      left: 772px;
+      top: 18px;
+      left: 680px;
+      padding-right: 40px;
+      background-color: #ffffff;
+      z-index: 1;
 
   }
 
 
 
-    .nav{
+    .pad{
       left: 0px;
-      width: 1020px;
-      height: 30px;
+      width: 920px;
+      height: 20px;
       
     }
 
     .navlinks{
       position: absolute;
-      left: 345px;
-      top: 46px;
-      width: 700px;
-      height: 200px;
+      left: 285px;
+      top: 42px;
+      width: 450px;
 
     }
 
 
 
 div.mainmenu {
-    left: 10px;
+    left: 5px;
     top: 0px;
     z-index: 1;
 }
 
 div.menu {
     float: left;
-    margin-left: 5px; 
+    margin-left: 2px; 
 }
 
 div.popup a:hover { }
@@ -100,7 +103,7 @@ div.menu:hover div.popup {
 
 
 div.menu div {
-    width: 90px;
+    width: 85px;
     background-color: #66ffcc;
     padding: 5px;
     text-align: left;
@@ -115,19 +118,16 @@ div.popup div + div, div.popup a + a { margin-top: 10px; }
 
     .search{
       position: absolute;
-      left: 810px;
+      left: 720px;
       top: 45px;
-      width: 150px;
+      width: 163px;
       height: 20px;
-      background-color: #e0e1dc;
-      border-style: solid;
-      border-width: 1px;
 
     }
 
     .searchicon{
       position: absolute;
-      left: 967px;
+      left: 892px;
       top: 45px;
       width: 20px;
       height: 20px;
@@ -140,8 +140,8 @@ div.popup div + div, div.popup a + a { margin-top: 10px; }
     .container{
       top: 0px;
       margin: auto;
-      width: 1020px;
-      height: 1800px;
+      width: 922px;
+      overflow: auto;
     }
 
 
@@ -151,7 +151,7 @@ div.popup div + div, div.popup a + a { margin-top: 10px; }
       padding-right: 40px;
       margin-bottom: 60px;
       left: 0px;
-      width: 692px;
+      width: 600px;
       overflow: hidden;
       text-align: center;
     }
@@ -159,21 +159,19 @@ div.popup div + div, div.popup a + a { margin-top: 10px; }
     .slideshow{
       position: relative;
       top: 10px;
-      left: 50px;
-      height: 500px;
+      left: 6px;
       width: 588px;
-      margin-bottom: 20px;
-      overflow: hidden;
-      background: gray;
+      overflow: auto;
       border-color: #000000;
       border-style: solid;
       border-width: 1px;
+      margin-bottom: 30px;
 
     }
 
 
     .studentwork{
-      max-width: 692px;
+      max-width: 600px;
       padding-bottom: 50px;
       padding-left: 40px;
       padding-right: 40px;
@@ -200,7 +198,7 @@ div.popup div + div, div.popup a + a { margin-top: 10px; }
   }
 
 .articlename{
-      width: 300px;
+      width: 250px;
 }
 
 
@@ -216,7 +214,7 @@ overflow: hidden;
 
 
 .newsdate{
-width: 692px;
+width: 100%;
 height:20px;
 padding-top: 10px;
 margin-bottom: 5px;
@@ -228,7 +226,7 @@ overflow: hidden;
 }
 
 .studentprofiledate{
-width: 300px;
+width: 250px;
 height:20px;
 margin-bottom: 5px;
 border-bottom-width: 1px;
@@ -241,12 +239,9 @@ overflow: hidden;
 
     .events{
       position: relative;
-      padding-left: 40px;
-      padding-right: 40px;
+      margin-left: 40px;
       padding-bottom: 60px;
-      overflow: auto;
       width: 168px;
-      background-color: #ffffff
     }
 
     .eventinfo{
@@ -260,17 +255,29 @@ overflow: hidden;
     .twitter{
       position: relative;
       padding-left: 40px;
-      padding-right: 40px;
       width: 168px;
-      background-color: #ffffff
     }
+
+
+    .profile{
+     position: relative;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 60px;
+      left: 0px;
+      width: 822px;
+      overflow: hidden;
+    }
+
+
+
 /*
     .footer{
       padding-top: 10px;
       padding-left: 10px;
       left: 0px;
       width: 100%;
-      height: 30px;
+      height: 25px;
       background-color: #474546;
       text-align: justify;
       text-transform: uppercase;
@@ -285,7 +292,7 @@ left: 20px;
 
 .footerc{
 position: absolute;
-left: 700px;
+left: 600px;
 }
 
 
@@ -299,5 +306,6 @@ left: 700px;
       text-align: justify;
       text-transform: uppercase;
       color: #ffffff;
+      z-index: 2;
     }
 }

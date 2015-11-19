@@ -1,4 +1,4 @@
-/*
+ /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -30,8 +30,9 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
+  height: 1800px;
   width: 100%;
-  max-width: 960px;
+  max-width: 922px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }

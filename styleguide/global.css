@@ -36,13 +36,42 @@ img, object, audio, video, svg {
 
 
 html {
-	background-color: #66ffcc;
+	background-color: #65ffcb;
 
 }
 
+.strikethrough {
+  position: relative;
+}
+
+.strikethrough:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: .5em;
+  margin-top: 4px;
+  background: #66FFCC;
+  z-index: -1;
+}
 
 
+.strikethroughright {
+  position: relative;
+}
 
+.strikethroughright:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 770;
+  width: 100%;
+  height: .5em;
+  margin-top: 4px;
+  background: #66FFCC;
+  z-index: -1;
+}
 
 
 @font-face {
@@ -65,20 +94,20 @@ src:
 body {
 	margin: 0 2.5%;
 	padding: 0 2.5%;
-	font-size: 12pt;
+	font-size: 14px;
 	line-height: 1.25;
+	text-align: left;
 	font-family: Inconsolata-Regular, “Inconsolata-Regular”, Courier, serif;
 	color: #000000;
 }
 h1 {
 	font-family: FuturaStdHeavy, “FuturaStdHeavy”, Arial, sans-serif;
 	text-transform: uppercase;
-	font-size: 18pt;
+	font-size: 18px;
 	line-height: 1.125;
 	padding-top: 1em;
 	margin-bottom: 0.2em;
 	color: #000000;
-	border-bottom: 0.5em solid #66FFCC;
 }
 
 
@@ -86,15 +115,14 @@ h1 {
 
 h2 {
 	font-family: FuturaStdHeavy, “FuturaStdHeavy”, Arial, sans-serif;
-	text-align: center;
-	font-size: 25pt;
+	font-size: 25px;
 	line-height: 1.3;
 	color: #474546;
 }
 h3 {
 	font-family: FuturaStdHeavy, “FuturaStdHeavy”, Arial, sans-serif;
 	font-weight: regular;
-	font-size: 14pt;
+	font-size: 14px;
 	line-height: 1.3;
 	padding-top: 0.25em;
 	margin-bottom: 0.3em;
@@ -105,13 +133,13 @@ h4 {
 	font-family: Inconsolata-Regular, “Inconsolata-Regular”, Courier, serif;
 	font-weight: normal;
 	text-transform: uppercase;
-	font-size: 12pt;
+	font-size: 12px;
 	color: #00cc99;
 }
 h5 {
 	font-family: Inconsolata-Regular, “Inconsolata-Regular”, Courier, serif;
 	font-weight: normal;
-	font-size: 12pt;
+	font-size: 12px;
 	line-height: 1.125;
 	padding-top: 1em;
 	margin-bottom: 0.3em;
@@ -121,7 +149,7 @@ h6 {
 	font-family: FuturaStdHeavy, “FuturaStdHeavy”, Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
-	font-size: 14pt;
+	font-size: 14px;
 	color: #000000;
 
 }
@@ -234,8 +262,10 @@ a:visited {
 }
 a[href]:hover,
 a[href]:focus {
-	color: #555555;
-	border-bottom-color: #555555;
+	background-color: #e0e1db;
+	font-weight: bold;
+
+
 }
 a:active {
 	color: #000000;
@@ -243,8 +273,6 @@ a:active {
 }
 .logo a, h1 a, h2 a, h3 a {
 	border: none;
-}
-
 /* @end Links */
 
 /* @group Forms */
@@ -255,12 +283,12 @@ label {
 input[type],
 textarea,
 select {
-	background-color: #fff;
+	background-color: #e0e1dc;
 	width: 100%;
 	font-family: inherit;
 	font-size: inherit;
 	padding: 0.125em;
-	border: 1px solid #ccc;
+	border: 1px solid #000000;
 	-webkit-border-radius: 0.25em;
 	-moz-border-radius: 0.25em;
 	-o-border-radius: 0.25em;
